@@ -112,7 +112,8 @@ server.get('/', function(req, res){res.send('Welcome')});
 
 
 server.use(
-    '/users', userRoutes         // http://www.something.com/user/
+    '/users', 
+    userRoutes         // http://www.something.com/user/
 );
 
 server.use(
@@ -123,6 +124,6 @@ server.use(
 server.listen(
     process.env.PORT,
     function() {
-        console.log('connected to ${process.env.REACT_APP_BACKEND_ENDPOINT}/');
+        console.log('connected to http://localhost:3001/');
     }
 );
